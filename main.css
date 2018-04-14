@@ -1,0 +1,87 @@
+/*xs (for phones - screens less than 768px wide)
+sm (for tablets - screens equal to or greater than 768px wide)
+md (for small laptops - screens equal to or greater than 992px wide)
+lg (for laptops and desktops - screens equal to or greater than 1200px wide)*/
+
+@media only screen and (max-width: 768px) and (min-width: 0px){
+body {
+    background-color:  #cce0ff;
+    margin: 0px;
+    padding: 0px;
+}    
+}
+
+@media only screen and (max-width: 992px) and (min-width: 769px) {
+body {
+    background-color:  #b3d1ff;
+    margin: 0px;
+    padding: 0px;
+}    
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 993px) {
+body {
+    background-color:  #99c2ff;
+    margin: 0px;
+    padding: 0px;
+}   
+}
+
+@media only screen and (min-width: 1201px) {
+    body {
+    background-color:  #80b3ff;
+    margin: 0px;
+    padding: 0px;
+}
+}
+
+
+#linkbar{
+    position:fixed;
+    top:0;
+    vertical-align: middle;
+    height:60px;
+    width:100%;
+    background-color: #EE7D31; 
+}
+
+#menu {
+    position:fixed;
+    top:60px;
+    height:45px;
+    list-style-type: none; 
+    margin: 0px; 
+    padding: 0px; 
+    overflow: hidden; 
+    left:20%;
+    width:80%; 
+    background-color: #767171;
+}
+
+
+
+
+
+
+
+#setUpMenu {
+    float: left; 
+    height:45px;
+    text-align: center; 
+    vertical-align: middle;
+    width:25%; 
+    font-size:20px
+}
+
+#setUpMenu a {
+    display: block; 
+    color: white; 
+    text-align: center; 
+    padding: 10px 10px; 
+    text-decoration: none;
+}
+
+#setUpMenu a:hover {
+    background-color: #7F7F7F; 
+    color: white;
+}

@@ -1,0 +1,16 @@
+<template name="cvFrenchPDF">
+    <body>
+    <style>
+        html, body {
+            overflow: hidden;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            document.getElementById("PDF").style.height = window.innerHeight + "px";
+            document.getElementById("PDF").style.width = window.innerWidth + "px";
+        });
+    </script>
+    <embed id="PDF" src="Curriculum vitae 2018-03-31 (French).pdf" allowfullscreen/>
+    </body>
+</template>
