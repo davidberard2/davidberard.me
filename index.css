@@ -39,7 +39,8 @@ body{
     vertical-align: middle;
     height:60px;
     width:100%;
-    background-color: #EE7D31; 
+    background-color: #EE7D31;
+    margin:auto;
 }
 
 #menu {
