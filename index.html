@@ -12,19 +12,19 @@
         <div id="linkbar">
             <div style="float:left;width:20%;border:1px solid red;vertical-align: middle;align:center;">
                 <a target="blank" href="https://www.linkedin.com/in/david-berard/">
-                    <img src="linkedin.svg" alt="linkedin" height="40px" style="margin:auto">
+                    <img src="media/linkedin.svg" alt="linkedin" height="40px" style="margin:auto">
                 </a>
                 <a target="blank" href="https://github.com/davidberard2">
-                    <img src="gith.svg" alt="github" height="40px" style="margin:auto">
+                    <img src="media/gith.svg" alt="github" height="40px" style="margin:auto">
                 </a>
                 <a target="blank" href="cvEnglishPDF.html">
-                    <img src="cv.svg" alt="cv" height="40px" style="margin:auto">
+                    <img src="media/cv.svg" alt="cv" height="40px" style="margin:auto">
                 </a>
             </div>
 
             <div style="float:right;border:1px solid red;vertical-align: middle;">
                 <a target="blank" href="cvEnglishPDF.html">
-                    <img class="iconeRight"  src="cv.svg" alt="cv" height="40px" style="margin:auto">
+                    <img class="iconeRight"  src="media/cv.svg" alt="cv" height="40px" style="margin:auto">
                 </a>
             </div>
         </div>
@@ -40,10 +40,10 @@
     
         <div style="margin-top:150px;margin-bottom:35px;width:80%;margin-left:10%;overflow:auto ">
             <div style="float:left;">
-                <img src="self.jpg" alt="self" height="300px" style="margin-right:40px;border-radius:150px;">
+                <img src="media/self.jpg" alt="self" height="300px" style="margin-right:40px;border-radius:150px;">
             </div>
             <div style="height:300px">
-                <img src="this.svg" alt="self" height="70px">
+                <img src="media/this.svg" alt="self" height="70px">
                 <p style="margin:0px;padding:0px;text-align:justify;font-size:23px">
                     I am a third-year student in Software Engineering at Concordia University. I had also the chance to develop many skills through work experiences; those allowed me to structure my work, analyze complex issues and find creative solutions. I am professional, social and enthusiast. I strive to make myself as useful as possible and to develop better solutions for the company.
                 </p>
@@ -60,136 +60,162 @@
 <hr style="width:80%; margin-left:0px;border: 2px solid #767171;">
         
         
-        <div style="margin:0px;padding:0px;margin-top:35px;margin-bottom:35px;width:80%;margin-left:10%;overflow:auto">
+<!--***TIMELINE DIVISION***********************************************-->         
+        <div class="row" style="margin-top:35px;margin-bottom:35px;overflow:auto">
             <div>
-                <h3>TIMELINE</h3>
+                <h2 style="margin-bottom:20px">TIMELINE</h2>
             </div>
             <div  align="center" width="100%" style="overflow: scroll">
-                <img src="timeline.png" width="100%" style="min-width:600px; margin:0px;padding:0px">
+                <img src="media/timeline.png" width="100%" style="min-width:600px; margin:0px;padding:0px">
             </div>
-        
         </div>
+<!--*******************************************************************-->  
+                
+        
+<hr style="width:80%; margin-left:20%;border: 2px solid #767171;">  
         
         
-        <div style="margin:0px;padding:0px;margin-top:35px;margin-bottom:35px;width:20%;margin-left:70%;overflow:auto">
-            <div>
-                <h3>EDUCATION</h3>
+        <div class="row">    
+ <!--***WORK EXPERIENCE DIVISION***************************************-->            
+            <div style="margin-top:0px;display:inline-block;width:69%;vertical-align:top;">
+                 <div style="vertical-align:top;">
+                    <h2 style="margin-bottom:20px">WORK EXPERIENCES</h2>
+                </div>  
+                <div>
+                    <img src="media/workExperience/c2.svg" alt="self" height="200px">
+                    <img src="media/workExperience/prattandwhitney.svg" alt="self" height="200px">
+                    <img src="media/workExperience/transfreight.svg" alt="self" height="200px">
+                    <img src="media/workExperience/bombardier.svg" alt="self" height="200px">
+                    <img src="media/workExperience/montreal.svg" alt="self" height="200px">
+                </div>
             </div>
-            <div>
-            <table style="margin-left:10px;margin-right:10px">
-                <tr>
-                    <table>
-                        <tr>
-                            <td>
-                                <img src="concordiaUniversity.svg" width="50px">
-                            </td>
-                            <td style="padding-left:15px">
-                                <h4 style="white-space: nowrap">Concordia University</h4>
-                                <h6 style="white-space: nowrap">BEng. Software Engineering</h6>
-                                <h6 style="white-space: nowrap">63.5/120 Credits completed</h6>
-                            </td>
-                        </tr>
-                    </table>
-                </tr>
-                <tr style="text-align:center;">
+<!--*******************************************************************-->             
+            
+<!--***EDUCATION DIVISION**********************************************-->             
+            <div style="display:inline-block;width:30%">
+                <div>
+                    <h2 style="margin-bottom:20px">EDUCATION</h2>
+                </div>
+                <div>
+                <table style="margin-left:10px;margin-right:10px">
+                    <tr>
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="media/education/concordiaUniversity.svg" width="50px">
+                                </td>
+                                <td style="padding-left:15px">
+                                    <h4 style="white-space: nowrap">Concordia University</h4>
+                                    <h6 style="white-space: nowrap">BEng. Software Engineering</h6>
+                                    <h6 style="white-space: nowrap">63.5/120 Credits completed</h6>
+                                </td>
+                            </tr>
+                        </table>
+                    </tr>
+                    <tr>
+                        <br>
+                        <div style="width:90%;padding:5%">
+                            <canvas id="myChart" style="width=175px"></canvas>
+                        </div>
+                        <script  type="text/javascript">
+
+                            var ctx = document.getElementById("myChart");
+                            var myChart = new Chart(ctx, {
+                                type: 'doughnut',
+                                data: {
+                                    labels: ["REMAINING", "OTHER", "SOEN", "COMP", "ENGR"],
+                                    datasets: [{
+                                        label: 'Credit',
+                                        data: [56.5, 3, 13, 20, 27.5],
+                                        backgroundColor: [
+                                            'rgba(255, 255, 255,0)',
+                                            'rgb(45, 123, 148)',
+                                            'rgb(255, 156, 18)',
+                                            'rgb(128, 128, 128)',
+                                            'rgb(45, 113, 137)'
+                                        ],
+
+                                        borderColor: [
+                                            'rgba(255, 255, 255,0)',
+                                            'rgb(45, 123, 148)',
+                                            'rgb(255, 156, 18)',
+                                            'rgb(128, 128, 128)',
+                                            'rgb(45, 113, 137)'
+                                        ],
+                                        borderWidth: 1
+                                    }]
+                                },
+                                options: {
+                                    legend: {
+                                        display: false,
+                                    },
+                                    toolips: {
+                                        displayColors: false,
+                                    },
+                                    scaleShowLabelBackdrop: true,
+                                    scaleBackdropColor: "rgba(255,255,255,0.75)",
+                                    scaleBeginAtZero: true,  
+                                    scaleBackdropPaddingY: 2,
+                                    scaleBackdropPaddingX: 2,                
+                                    scaleShowLine: true,                
+                                    segmentShowStroke: true,
+                                    segmentStrokeColor: "#fff",                
+                                    segmentStrokeWidth: 2, 
+                                    animationSteps: 100,                
+                                    animationEasing: "easeOutBounce",
+                                    animateRotate: true,  
+                                    animateScale: false,
+
+                                    legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>",
+                                }
+                            });  
+
+                        </script>
+                      <!--  <canvas id="doughnut-chart" width="50" height="50"></canvas>-->
+                    </tr>
+                    <hr style="border:1px solid RGB(128,128,128)">
+                    <tr>
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="media/education/dawsonCollege.svg" width="50px">
+                                </td>
+                                <td style="padding-left:15px">
+                                    <h4  style="white-space: nowrap">Dawson College</h4>
+                                    <h6  style="white-space: nowrap">DEC. Pure and Apllied Science</h6>
+                                    <h6  style="white-space: nowrap">Completed in December 2014</h6>
+                                </td>
+                            </tr>
+                        </table>
+                    </tr>
+                    <hr style="border:1px solid RGB(128,128,128)">
+                    <tr>
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="media/education/collegeFrancais.png" width="50px">
+                                </td>
+                                <td style="padding-left:15px">
+                                    <h4  style="white-space: nowrap">Collège Francais</h4>
+                                    <h6  style="white-space: nowrap">DES. Advanced Science</h6>
+                                    <h6  style="white-space: nowrap">Completed in June 2012</h6>
+                                </td>
+                            </tr>
+                        </table>
+                    </tr>
                     <br>
-                    <div style="width:90%;padding:5%">
-                        <canvas id="myChart"></canvas>
-                    </div>
-                    <script  type="text/javascript">
-                                                  
-                        var ctx = document.getElementById("myChart");
-                        var myChart = new Chart(ctx, {
-                            type: 'doughnut',
-                            data: {
-                                labels: ["REMAINING", "OTHER", "SOEN", "COMP", "ENGR"],
-                                datasets: [{
-                                    label: 'Credit',
-                                    data: [56.5, 3, 13, 20, 27.5],
-                                    backgroundColor: [
-                                        'rgba(255, 255, 255,0)',
-                                        'rgb(45, 123, 148)',
-                                        'rgb(255, 156, 18)',
-                                        'rgb(128, 128, 128)',
-                                        'rgb(45, 113, 137)'
-                                    ],
-                                        
-                                    borderColor: [
-                                        'rgba(255, 255, 255,0)',
-                                        'rgb(45, 123, 148)',
-                                        'rgb(255, 156, 18)',
-                                        'rgb(128, 128, 128)',
-                                        'rgb(45, 113, 137)'
-                                    ],
-                                    borderWidth: 1
-                                }]
-                            },
-                            options: {
-                                legend: {
-                                    display: false,
-                                },
-                                toolips: {
-                                    displayColors: false,
-                                },
-                                scaleShowLabelBackdrop: true,
-                                scaleBackdropColor: "rgba(255,255,255,0.75)",
-                                scaleBeginAtZero: true,  
-                                scaleBackdropPaddingY: 2,
-                                scaleBackdropPaddingX: 2,                
-                                scaleShowLine: true,                
-                                segmentShowStroke: true,
-                                segmentStrokeColor: "#fff",                
-                                segmentStrokeWidth: 2, 
-                                animationSteps: 100,                
-                                animationEasing: "easeOutBounce",
-                                animateRotate: true,  
-                                animateScale: false,
-                                    
-                                legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>",
-                            }
-                        });  
-                               
-                    </script>
-                  <!--  <canvas id="doughnut-chart" width="50" height="50"></canvas>-->
-                </tr>
-                <hr style="border:1px solid RGB(128,128,128)">
-                <tr>
-                    <table>
-                        <tr>
-                            <td>
-                                <img src="dawsonCollege.svg" width="50px">
-                            </td>
-                            <td style="padding-left:15px">
-                                <h4  style="white-space: nowrap">Dawson College</h4>
-                                <h6  style="white-space: nowrap">DEC. Pure and Apllied Science</h6>
-                                <h6  style="white-space: nowrap">Completed in December 2014</h6>
-                            </td>
-                        </tr>
-                    </table>
-                </tr>
-                <hr style="border:1px solid RGB(128,128,128)">
-                <tr>
-                    <table>
-                        <tr>
-                            <td>
-                                <img src="collegeFrancais.png" width="50px">
-                            </td>
-                            <td style="padding-left:15px">
-                                <h4  style="white-space: nowrap">Collège Francais</h4>
-                                <h6  style="white-space: nowrap">DES. Advanced Science</h6>
-                                <h6  style="white-space: nowrap">Completed in June 2012</h6>
-                            </td>
-                        </tr>
-                    </table>
-                </tr>
-                <br>
-            </table>
+                </table>
+                </div>
             </div>
-        </div>
+<!--*******************************************************************-->                
+        </div>  
         
-<hr style="width:80%; margin-left:20%;border: 2px solid #767171;">
-        <div align="center">
-            <img src="construction.svg" atl="construction" width="600px" style="margin:40px">
+        
+<hr style="width:80%; margin-left:0px;border: 2px solid #767171;">
+        
+            
+        <div class="row" align="center">
+            <img src="media/construction.svg" atl="construction" width="600px">
         </div>
         <div>
             <hr>
