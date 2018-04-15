@@ -82,4 +82,10 @@ body{
     color: white;
 }
 
+h1,h2,h3,h4,h5,h6 {
+    font-family: Arial;
+    margin:0px;
+    padding:0px;
+}
+
 /*table,tr,td,a,div,img {border:1px solid black}*/

@@ -4,6 +4,7 @@
         <title>DavidBerard.me</title>
         
         <link rel="stylesheet" type="text/css" href="index.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     </head>
     <body>
     
@@ -66,8 +67,117 @@
         </div>
         
         
-        <div style="margin:0px;padding:0px;margin-top:35px;margin-bottom:35px;width:80%;margin-left:10%;overflow:auto">
-        
+        <div style="margin:0px;padding:0px;margin-top:35px;margin-bottom:35px;width:20%;margin-left:70%;overflow:auto">
+            <div>
+                <h3>EDUCATION</h3>
+            </div>
+            <div>
+            <table style="margin-left:10px;margin-right:10px">
+                <tr>
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="concordiaUniversity.svg" width="50px">
+                            </td>
+                            <td style="padding-left:15px">
+                                <h4 style="white-space: nowrap">Concordia University</h4>
+                                <h6 style="white-space: nowrap">BEng. Software Engineering</h6>
+                                <h6 style="white-space: nowrap">63.5/120 Credits completed</h6>
+                            </td>
+                        </tr>
+                    </table>
+                </tr>
+                <tr style="text-align:center;">
+                    <br>
+                    <div style="width:90%;padding:5%">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    <script  type="text/javascript">
+                                                  
+                        var ctx = document.getElementById("myChart");
+                        var myChart = new Chart(ctx, {
+                            type: 'doughnut',
+                            data: {
+                                labels: ["REMAINING", "OTHER", "SOEN", "COMP", "ENGR"],
+                                datasets: [{
+                                    label: 'Credit',
+                                    data: [56.5, 3, 13, 20, 27.5],
+                                    backgroundColor: [
+                                        'rgba(255, 255, 255,0)',
+                                        'rgb(45, 123, 148)',
+                                        'rgb(255, 156, 18)',
+                                        'rgb(128, 128, 128)',
+                                        'rgb(45, 113, 137)'
+                                    ],
+                                        
+                                    borderColor: [
+                                        'rgba(255, 255, 255,0)',
+                                        'rgb(45, 123, 148)',
+                                        'rgb(255, 156, 18)',
+                                        'rgb(128, 128, 128)',
+                                        'rgb(45, 113, 137)'
+                                    ],
+                                    borderWidth: 1
+                                }]
+                            },
+                            options: {
+                                legend: {
+                                    display: false,
+                                },
+                                scaleShowLabelBackdrop: true,
+                                scaleBackdropColor: "rgba(255,255,255,0.75)",
+                                scaleBeginAtZero: true,  
+                                scaleBackdropPaddingY: 2,
+                                scaleBackdropPaddingX: 2,                
+                                scaleShowLine: true,                
+                                segmentShowStroke: true,
+                                segmentStrokeColor: "#fff",                
+                                segmentStrokeWidth: 2, 
+                                animationSteps: 100,                
+                                animationEasing: "easeOutBounce",
+                                animateRotate: true,  
+                                animateScale: false,
+                                    
+                                legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>",
+                            }
+                        });  
+                               
+                    </script>
+                  <!--  <canvas id="doughnut-chart" width="50" height="50"></canvas>-->
+                </tr>
+                <hr style="border:1px solid RGB(128,128,128)">
+                <tr>
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="dawsonCollege.gif" width="50px">
+                            </td>
+                            <td style="padding-left:15px">
+                                <h4  style="white-space: nowrap">Dawson College</h4>
+                                <h6  style="white-space: nowrap">DEC. Pure and Apllied Science</h6>
+                                <h6  style="white-space: nowrap">Completed in December 2014</h6>
+                            </td>
+                        </tr>
+                    </table>
+                </tr>
+                <hr style="border:1px solid RGB(128,128,128)">
+                <tr>
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="collegeFrancais.png" width="50px">
+                            </td>
+                            <td style="padding-left:15px">
+                                <h4  style="white-space: nowrap">Collège Francais</h4>
+                                <h6  style="white-space: nowrap">DES. Advanced Science</h6>
+                                <h6  style="white-space: nowrap">Completed in June 2012</h6>
+                            </td>
+                        </tr>
+                    </table>
+                </tr>
+                <br>
+            </table>
+            </div>
         </div>
         
         
