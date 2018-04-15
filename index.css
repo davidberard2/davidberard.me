@@ -6,35 +6,31 @@ lg (for laptops and desktops - screens equal to or greater than 1200px wide)*/
 @media only screen and (max-width: 768px) and (min-width: 0px){
 body {
     background-color:  #cce0ff;
-    margin: 0px;
-    padding: 0px;
 }    
 }
 
 @media only screen and (max-width: 992px) and (min-width: 769px) {
 body {
     background-color:  #b3d1ff;
-    margin: 0px;
-    padding: 0px;
 }    
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 993px) {
 body {
     background-color:  #99c2ff;
-    margin: 0px;
-    padding: 0px;
 }   
 }
 
 @media only screen and (min-width: 1201px) {
     body {
     background-color:  #80b3ff;
-    margin: 0px;
-    padding: 0px;
 }
 }
 
+body{
+    margin: 0px;
+    padding: 0px;
+}
 
 #linkbar{
     position:fixed;
