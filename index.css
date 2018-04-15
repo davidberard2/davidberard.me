@@ -23,7 +23,7 @@ body {
 
 @media only screen and (min-width: 1201px) {
     body {
-    background-color:  #80b3ff;
+    background-color:  #E6E6E6;
 }
 }
 
@@ -81,3 +81,5 @@ body{
     background-color: #7F7F7F; 
     color: white;
 }
+
+/*table,tr,td,a,div,img {border:1px solid black}*/
