@@ -3,18 +3,91 @@ sm (for tablets - screens equal to or greater than 768px wide)
 md (for small laptops - screens equal to or greater than 992px wide)
 lg (for laptops and desktops - screens equal to or greater than 1200px wide)*/
 
-@media only screen and (max-width: 768px) and (min-width: 0px){
-body {
-    background-color:  #cce0ff;
-}    
+@media only screen and (max-width: 920px) and (min-width: 0px){
+    body {
+        background-color:  #cce0ff;
+    } 
+    
+    .menu {
+        visibility: hidden;
+    }
+    
+    .imgMenu {
+        position:fixed;
+        top:10px;
+        right:20px;
+        height:40px;
+    }
+    
+    .imgLogo {
+       position:fixed;
+        top:10px;
+        right:50%;
+        left:50%;
+        height:40px;
+    }
+    
+    .imgLinkedIn {
+        position:fixed;
+        top:10px;
+        left:20px;
+        height:40px;
+    }
+    
+    .imgGit {
+        position:fixed;
+        top:10px;
+        left:80px;
+        height:40px;
+    }
+    
+    .imgCV {
+        position:fixed;
+        top:10px;
+        left:140px;
+        height:40px;
+    }
 }
 
-@media only screen and (max-width: 992px) and (min-width: 769px) {
-body {
-    background-color:  #b3d1ff;
-}    
+@media only screen and (min-width: 920px) {
+    body {
+        background-color:  #b3d1ff;
+    } 
+    
+    
+    .imgMenu {
+        visibility: hidden;
+    }  
+    
+    .imgLogo {
+        position:fixed;
+        top:10px;
+        right:20px;
+        height:40px;
+    }
+    
+    .imgLinkedIn {
+        position:fixed;
+        top:10px;
+        left:20px;
+        height:40px;
+    }
+    
+    .imgGit {
+        position:fixed;
+        top:10px;
+        left:80px;
+        height:40px;
+    }
+    
+    .imgCV {
+        position:fixed;
+        top:10px;
+        left:140px;
+        height:40px;
+    }
 }
-
+/*
 @media only screen and (max-width: 1200px) and (min-width: 993px) {
 body {
     background-color:  #99c2ff;
@@ -25,7 +98,7 @@ body {
     body {
     background-color:  #E6E6E6;
 }
-}
+}*/
 
 body{
     margin: 0px;
@@ -102,6 +175,5 @@ div {
     margin-left:10%;
     margin-right: 10%;
 }
-
 
 /*table,tr,td,a,div,img {border:1px solid black}*/
