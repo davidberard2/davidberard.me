@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>CV English</title>
+    </head>
     <body>
     <style>
         html, body {
             overflow: hidden;
+            margin: 0px;
+            padding: 0px;
         }
     </style>
+    
+    <embed id="PDF" src="Curriculum%20vitae%202018-03-31%20(English).pdf" allowfullscreen/>
+        
     <script>
-        $(document).ready(function(){
             document.getElementById("PDF").style.height = window.innerHeight + "px";
             document.getElementById("PDF").style.width = window.innerWidth + "px";
-        });
+            window.addEventListener("resize", function(){
+                document.getElementById("PDF").style.height = window.innerHeight + "px";
+                document.getElementById("PDF").style.width = window.innerWidth + "px";
+            });
     </script>
-    <embed id="PDF" src="Curriculum vitae 2018-03-31 (English).pdf" allowfullscreen/>
     </body>
 </html>
