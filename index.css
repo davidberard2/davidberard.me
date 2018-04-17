@@ -51,7 +51,7 @@ lg (for laptops and desktops - screens equal to or greater than 1200px wide)*/
 
 @media only screen and (min-width: 1000px) {
     body {
-        background-color:  #b3d1ff;
+        background-color:  #E6E6E6;
     } 
     
     
@@ -176,4 +176,4 @@ div {
     margin-right: 10%;
 }
 
-/*table,tr,td,a,div,img {border:1px solid black}*/
+/*p,table,tr,td,a,div,img {border:1px solid black}*/
