@@ -29,7 +29,7 @@
     </head>
     <body>
         <button type="button" onclick="play()">Play!</button>
-        <div style="border:2px solid yellow;width:100%;overflow:auto;">
+        <div id="all" style="border:2px solid yellow;width:100%;overflow:auto;">
             <div id="circleLeft"></div>
             <div id="circleRight"></div>
         </div>
@@ -54,6 +54,7 @@
                     }
                     setTimeout(allWhite, (side[i][1]+2000))
                 }
+                document.getElementById("all").style.backgroundColor = "red";
             }
             
             function colorLeft() {
