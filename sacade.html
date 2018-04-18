@@ -54,7 +54,7 @@
                     }
                     setTimeout(allWhite, (side[i][1]+2000))
                 }
-                document.getElementById("all").style.backgroundColor = "red";
+                setTimeout(all, timeCount+1000)
             }
             
             function colorLeft() {
@@ -68,6 +68,10 @@
             function allWhite() {
                 document.getElementById("circleLeft").style.backgroundColor = "white";
                 document.getElementById("circleRight").style.backgroundColor = "white";
+            }
+            
+            function all() {
+                document.getElementById("all").style.backgroundColor = "yellow";
             }
             
             
