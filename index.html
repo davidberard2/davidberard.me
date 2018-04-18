@@ -2,13 +2,13 @@
 <html>
     <head>
         <title>DavidBerard.me</title>
-        
+        <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="index.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     </head>
     <body>
     
-    
+<!--***THE ORANGE BAR WITH ICONS***************************************-->   
         <div id="linkbar">
                 <a target="_blank" href="https://www.linkedin.com/in/david-berard/">
                     <img class="imgLinkedIn" src="media/linkedin.svg" alt="linkedin">
@@ -16,9 +16,15 @@
                 <a target="_blank" href="https://github.com/davidberard2">
                     <img class="imgGit" src="media/gith.svg" alt="github">
                 </a>
-                <a target="_blank" href="cvEnglishPDF.html">
+            
+                <div class="tooltip">
                     <img class="imgCV" src="media/cv.svg" alt="cv">
-                </a>
+                      <span class="tooltiptext">
+                        <a target="_blank" href="cvEnglishPDF.html" style="text-decoration:none; color:white;">English CV</a>
+                        <br>
+                        <a target="_blank" href="cvFrenchPDF.html" style="text-decoration:none; color:white;">French CV</a>
+                      </span>
+                </div>
             
                 <a id="demo" style="margin-left:30%"></a>
                 
@@ -41,44 +47,52 @@
                     <img class="imgMenu" src="media/menu.svg" alt="Menu">
                 </a>
         </div>
-    
+<!--*******************************************************************-->
+        
+<!--***THE MENU BAR****************************************************-->
         <ul id = "menu" class="menu">
-            <li id="setUpMenu"><a href="experiences.html">Exp. / Skills</a></li>
+            <li id="setUpMenu"><a href="index.html">Exp. / Skills</a></li>
             <li id="setUpMenu"><a href="philosophy.html">Phil. / Aspirations</a></li>
             <li id="setUpMenu"><a href="projects.html">Projects</a></li>
             <li id="setUpMenu"><a href="literaryInfluences.html">Literary Influences</a></li>
         </ul>
-    
+<!--*******************************************************************-->
         
-        <div class="row" style="margin-top:150px;overflow:auto">
-            <div style="float:left;">
-                <img src="media/self.jpg" alt="self" height="250px" style="margin-right:40px;border-radius:150px;">
+<!--***PRESENTATION DIVISION*******************************************-->        
+        <div class="row" id="first" style="overflow:auto">
+            <div class="column" style="overflow:auto">
+                <div id="try">
+                    <img class="imgSelf" src="media/self.jpg" alt="self" height="250px">
+                </div>
+                <div>
+                    <div>
+                        <img src="media/this.svg" alt="self" width="370px" style="max-width:100%">
+                    </div>
+                    <br>
+                    <p style="margin:0px;padding:0px;text-align:justify;font-size:20px">
+                        I am a third-year student in Software Engineering at Concordia University. I had also the chance to develop many skills through work experiences; those allowed me to structure my work, analyze complex issues and find creative solutions. I am professional, social and enthusiast. I strive to make myself as useful as possible and to develop better solutions for the company.
+                    </p>
+                    <br>
+                    <p style="margin:0px;padding:0px;text-align:center;">
+                        David Berard | Montreal, Canada | davidberard2@gmail.com | 514-793-2042
+                    </p>
+                </div>
             </div>
-            <div>
-                <img src="media/this.svg" alt="self" height="60px">
-                <p style="margin:0px;padding:0px;text-align:justify;font-size:20px">
-                    I am a third-year student in Software Engineering at Concordia University. I had also the chance to develop many skills through work experiences; those allowed me to structure my work, analyze complex issues and find creative solutions. I am professional, social and enthusiast. I strive to make myself as useful as possible and to develop better solutions for the company.
-                </p>
-                <br>
-                <br>
-                <p style="margin:0px;padding:0px;text-align:center;">
-                    David Bérard | Montreal, Canada | davidberard2@gmail.com | 514-793-2042
-                </p>
-            </div>
-            
         </div>
-        
+<!--*******************************************************************-->        
         
 <hr style="width:80%; margin-left:0px;border: 2px solid #767171;">
         
         
 <!--***TIMELINE DIVISION***********************************************-->         
-        <div class="row" style="margin-top:35px;margin-bottom:35px;overflow:auto">
-            <div>
-                <h2 style="margin-bottom:20px">TIMELINE</h2>
-            </div>
-            <div  align="center" width="100%" style="overflow: scroll">
-                <img src="media/timeline.png" width="100%" style="min-width:600px; margin:0px;padding:0px">
+        <div class="row" style="overflow:auto">
+            <div class="column">
+                <div>
+                    <h2 style="margin-bottom:20px">TIMELINE</h2>
+                </div>
+                <div  align="center" width="100%" style="overflow: scroll">
+                    <img src="media/timeline.png" width="99%" style="min-width:600px; margin:0px;padding:0px;margin-bottom:8px">
+                </div>
             </div>
         </div>
 <!--*******************************************************************-->  
@@ -88,23 +102,28 @@
         
         
         <div class="row">    
- <!--***WORK EXPERIENCE DIVISION***************************************-->            
-            <div style="margin-top:0px;display:inline-block;width:69%;vertical-align:top;">
-                 <div style="vertical-align:top;">
-                    <h2 style="margin-bottom:20px">WORK EXPERIENCES</h2>
-                </div>  
-                <div>
-                    <img src="media/workExperience/c2.svg" alt="self" height="200px">
-                    <img src="media/workExperience/prattandwhitneycanada.svg" alt="self" height="200px">
-                    <img src="media/workExperience/transfreight.svg" alt="self" height="200px">
-                    <img src="media/workExperience/bombardier.svg" alt="self" height="200px">
-                    <img src="media/workExperience/montreal.svg" alt="self" height="200px">
+            
+ <!--***WORK EXPERIENCE DIVISION***************************************-->  
+            <div class="column">
+                <div class="divWorkExperience" style="margin-top:0px;display:inline-block;vertical-align:top;">
+                     <div style="vertical-align:top;">
+                        <h2 style="margin-bottom:20px">WORK EXPERIENCES</h2>
+                    </div>  
+                    <div>
+                        <img src="media/workExperience/c2.svg" alt="self" height="200px">
+                        <img src="media/workExperience/prattandwhitneycanada.svg" alt="self" height="200px">
+                        <img src="media/workExperience/transfreight.svg" alt="self" height="200px">
+                        <img src="media/workExperience/bombardier.svg" alt="self" height="200px">
+                        <img src="media/workExperience/montreal.svg" alt="self" height="200px">
+                    </div>
                 </div>
             </div>
-<!--*******************************************************************-->             
+<!--*******************************************************************--> 
             
-<!--***EDUCATION DIVISION**********************************************-->             
-            <div style="display:inline-block;width:30%">
+            
+<!--***EDUCATION DIVISION**********************************************-->   
+            <div class="column">
+            <div class="divEducation" style="display:inline-block;">
                 <div>
                     <h2 style="margin-bottom:20px">EDUCATION</h2>
                 </div>
@@ -219,6 +238,7 @@
                 </table>
                 </div>
             </div>
+            </div>
 <!--*******************************************************************-->                
         </div>  
         
@@ -229,11 +249,15 @@
         <div class="row" align="center">
             <img src="media/construction.svg" atl="construction" width="600px">
         </div>
+        
+<!--***COPYRIGHT DIVISION**********************************************-->
         <div>
             <hr>
             <p style="text-align:center">
                 Copyright 2018-2025 by David Bérard. All Rights Reserved.
-            </p>
+            </p><a  target="_blank" href="sacade.html">SACADE</a> 
         </div>
+<!--*******************************************************************-->        
+
     </body>
 </html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DavidBerard.me</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+        <style>
+            #circleLeft {
+                float:left;
+                width: 100px;
+                height: 100px;
+                -webkit-border-radius: 50px;
+                -moz-border-radius: 50px;
+                border-radius: 50px;
+                border:2px solid red;
+                background: white;
+            }
+            
+            #circleRight {
+                float:right;
+                width: 100px;
+                height: 100px;
+                -webkit-border-radius: 50px;
+                -moz-border-radius: 50px;
+                border-radius: 50px;
+                border:2px solid red;
+                background: white;
+            }
+        </style>
+    </head>
+    <body>
+        <button type="button" onclick="play()">Play!</button>
+        <div style="border:2px solid yellow;width:100%;overflow:auto;">
+            <div id="circleLeft"></div>
+            <div id="circleRight"></div>
+        </div>
+        <script>
+            function play(){
+                var side = new Array(20);
+                var timeCount = 0;
+                var i;
+                for (i=0; i <20; i++){
+                    side[i]=new Array(2);
+                }
+                for(i=0;i<20;i++) {
+                    side[i][0]=Math.random()*2;
+                    side[i][1]= timeCount + (Math.random()*2000);
+                    timeCount = side[i][1] + 2000;
+                }
+                for(i=0;i<20;i++){
+                    if(side[i][0]<1){
+                        setTimeout(colorLeft, side[i][1])
+                    } else if (side[i][0]>=1){
+                        setTimeout(colorRight, side[i][1])
+                    }
+                    setTimeout(allWhite, (side[i][1]+2000))
+                }
+            }
+            
+            function colorLeft() {
+                document.getElementById("circleLeft").style.backgroundColor = "red";
+            }
+            
+            function colorRight() {
+                document.getElementById("circleRight").style.backgroundColor = "red"; 
+            }
+            
+            function allWhite() {
+                document.getElementById("circleLeft").style.backgroundColor = "white";
+                document.getElementById("circleRight").style.backgroundColor = "white";
+            }
+            
+            
+        </script>
+    </body>
+</html>

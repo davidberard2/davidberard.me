@@ -2,23 +2,74 @@
 <html>
     <head>
         <title>CV English</title>
-    </head>
-    <body>
-    <br>
-    <style>
+        
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <style>
         .instagram {padding:5px; width:300px}
     </style>
-    <div class="container" style="text-align:center;width:80%">
-        <img class="instagram" src="media/instagram/2018-01-09.jpg" alt="name">
-        <img class="instagram" src="media/instagram/2018-01-03.jpg" alt="name">
-        <img class="instagram" src="media/instagram/2017-11-28.jpg" alt="name">
-        <img class="instagram" src="media/instagram/2017-08-22.jpg" alt="name">
-        <img class="instagram" src="media/instagram/2017-08-21.jpg" alt="name">               
-        <img class="instagram" src="media/instagram/2017-06-26.jpg" alt="name">
-        <img class="instagram" src="media/instagram/2017-06-25.jpg" alt="name">
-        <img class="instagram" src="media/instagram/2017-05-13.jpg" alt="name">
-        <img class="instagram" src="media/instagram/2017-04-22.jpg" alt="name">
-        <img class="instagram" src="media/instagram/2017-02-12.jpg" alt="name">
-    </div>
+    </head>
+    <body>
+<!--***THE ORANGE BAR WITH ICONS***************************************-->   
+        <div id="linkbar">
+                <a target="_blank" href="https://www.linkedin.com/in/david-berard/">
+                    <img class="imgLinkedIn" src="media/linkedin.svg" alt="linkedin">
+                </a>
+                <a target="_blank" href="https://github.com/davidberard2">
+                    <img class="imgGit" src="media/gith.svg" alt="github">
+                </a>
+            
+                <div class="tooltip">
+                    <img class="imgCV" src="media/cv.svg" alt="cv">
+                      <span class="tooltiptext">
+                        <a target="_blank" href="cvEnglishPDF.html" style="text-decoration:none; color:white;">English CV</a>
+                        <br>
+                        <a target="_blank" href="cvFrenchPDF.html" style="text-decoration:none; color:white;">French CV</a>
+                      </span>
+                </div>
+            
+                <a id="demo" style="margin-left:30%"></a>
+                
+                <script>
+                    window.addEventListener("resize", function(){
+                        var w = window.innerWidth
+                        || document.documentElement.clientWidth
+                        || document.body.clientWidth;
+
+                        var x = document.getElementById("demo");
+                        x.innerHTML = "-->" + w + "<--";
+                    });
+                </script>
+                
+                <a href="me.html">
+                    <img class="imgLogo" src="media/logoWhite.png" alt="cv">
+                </a>
+            
+                <a class="temp" data-toggle="collapse" data-target="#list" style="float:right">
+                    <img class="imgMenu" src="media/menu.svg" alt="Menu">
+                </a>
+        </div>
+<!--*******************************************************************-->
+        
+<!--***THE MENU BAR****************************************************-->
+        <ul id = "menu" class="menu">
+            <li id="setUpMenu"><a href="index.html">Exp. / Skills</a></li>
+            <li id="setUpMenu"><a href="philosophy.html">Phil. / Aspirations</a></li>
+            <li id="setUpMenu"><a href="projects.html">Projects</a></li>
+            <li id="setUpMenu"><a href="literaryInfluences.html">Literary Influences</a></li>
+        </ul>
+<!--*******************************************************************-->
+
+        <div class="row" id="first" style="text-align:center;width:80%">
+            <img class="instagram" src="media/instagram/2018-01-09.jpg" alt="name">
+            <img class="instagram" src="media/instagram/2018-01-03.jpg" alt="name">
+            <img class="instagram" src="media/instagram/2017-11-28.jpg" alt="name">
+            <img class="instagram" src="media/instagram/2017-08-22.jpg" alt="name">
+            <img class="instagram" src="media/instagram/2017-08-21.jpg" alt="name">               
+            <img class="instagram" src="media/instagram/2017-06-26.jpg" alt="name">
+            <img class="instagram" src="media/instagram/2017-06-25.jpg" alt="name">
+            <img class="instagram" src="media/instagram/2017-05-13.jpg" alt="name">
+            <img class="instagram" src="media/instagram/2017-04-22.jpg" alt="name">
+            <img class="instagram" src="media/instagram/2017-02-12.jpg" alt="name">
+        </div>
     </body>
 </html>

@@ -8,8 +8,21 @@ lg (for laptops and desktops - screens equal to or greater than 1200px wide)*/
         background-color:  #cce0ff;
     } 
     
+    #try {
+        text-align: center;
+    }
+    
     .menu {
         visibility: hidden;
+    }
+    
+    #first {
+        margin-top:70px;
+    }
+    
+    .imgSelf {
+        margin:20px;
+        border-radius:150px;
     }
     
     .imgMenu {
@@ -47,6 +60,14 @@ lg (for laptops and desktops - screens equal to or greater than 1200px wide)*/
         left:140px;
         height:40px;
     }
+    
+    .divEducation {
+        width:100%;
+    }
+    
+    .divWorkExperience {
+        width:100%;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -54,6 +75,18 @@ lg (for laptops and desktops - screens equal to or greater than 1200px wide)*/
         background-color:  #E6E6E6;
     } 
     
+    #try {
+        float:left;
+    }
+    
+    #first {
+        margin-top:110px;
+    }
+    
+    .imgSelf {
+        margin-right:40px;
+        border-radius:150px;
+    }
     
     .imgMenu {
         visibility: hidden;
@@ -86,7 +119,16 @@ lg (for laptops and desktops - screens equal to or greater than 1200px wide)*/
         left:140px;
         height:40px;
     }
+    
+    .divEducation {
+        width:30%;
+    }
+    
+    .divWorkExperience {
+        width:70%;
+    }
 }
+
 /*
 @media only screen and (max-width: 1200px) and (min-width: 993px) {
 body {
@@ -168,12 +210,60 @@ div {
     padding:0px;
 }
 
-.row{
+.row {
     width:80%;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     margin-left:10%;
     margin-right: 10%;
 }
+
+.column {
+    overflow: auto;
+    padding-top: 40px;
+    padding-bottom: 40px; 
+}
+
+/***TOOLTIP SETUP FOR CSS*********************************************************************/
+
+.tooltip {
+    position:fixed;
+    top:0px;
+    left:160px;
+    height:40px;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/*********************************************************************************************/
 
 /*p,table,tr,td,a,div,img {border:1px solid black}*/
