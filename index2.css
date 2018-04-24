@@ -12,7 +12,7 @@ lg (for laptops and desktops - screens equal to or greater than 1200px wide)*/
         text-align: center;
     }
     
-    #menu {
+    .menu {
         visibility: hidden;
     }
     
@@ -210,11 +210,12 @@ div {
     padding:0px;
 }
 
-.container {
-    width:100%;
-    padding-top: 40px;
-    padding-bottom: 40px; 
-    margin:0px;
+.row {
+    width:80%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left:10%;
+    margin-right: 10%;
 }
 
 .column {
@@ -222,17 +223,10 @@ div {
     padding-top: 40px;
     padding-bottom: 40px; 
 }
-#list {list-style-type: none; margin: 0; padding: 0; overflow: hidden; width:inherit; background-color: #EE7D31; border-top:1px solid RGB(128,128,128);border-bottom:2px solid RGB(128,128,128)}
-
-#setUpList {text-align: left; font-size:20px}
-
-#setUpList a {display: block; color: black; text-align: left; padding: 10px 10px; text-decoration: none;}
-
-#setUpList a:hover {background-color: #7F7F7F; color: white;}
 
 /***TOOLTIP SETUP FOR CSS*********************************************************************/
 
-.tooltip2 {
+.tooltip {
     position:fixed;
     top:0px;
     left:160px;
@@ -240,7 +234,7 @@ div {
     display: inline-block;
 }
 
-.tooltip2 .tooltiptext {
+.tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
     background-color: black;
@@ -255,7 +249,7 @@ div {
     margin-left: -60px;
 }
 
-.tooltip2 .tooltiptext::after {
+.tooltip .tooltiptext::after {
     content: "";
     position: absolute;
     bottom: 100%;
@@ -266,12 +260,10 @@ div {
     border-color: transparent transparent black transparent;
 }
 
-.tooltip2:hover .tooltiptext {
+.tooltip:hover .tooltiptext {
     visibility: visible;
 }
 
 /*********************************************************************************************/
 
-/*.container {border:3px solid red}
-.row {border:3px solid green}
-p,table,tr,td,a,img {border:2px solid black}*/
+p,table,tr,td,a,div,img {border:1px solid black}
