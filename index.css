@@ -3,6 +3,13 @@ sm (for tablets - screens equal to or greater than 768px wide)
 md (for small laptops - screens equal to or greater than 992px wide)
 lg (for laptops and desktops - screens equal to or greater than 1200px wide)*/
 
+@media(max-width: @screen-xs-max){}
+@media(min-width: @screen-sm-min){}  /* deprecated: @screen-tablet, or @screen-sm */
+@media(min-width: @screen-md-min){}  /* deprecated: @screen-desktop, or @screen-md */
+@media(min-width: @screen-lg-min){}  
+
+
+
 @media only screen and (max-width: 1000px) and (min-width: 0px){
     body {
         background-color:  #cce0ff;
@@ -21,7 +28,6 @@ lg (for laptops and desktops - screens equal to or greater than 1200px wide)*/
     }
     
     .imgSelf {
-        margin:20px;
         border-radius:150px;
     }
     
@@ -84,7 +90,6 @@ lg (for laptops and desktops - screens equal to or greater than 1200px wide)*/
     }
     
     .imgSelf {
-        margin-right:40px;
         border-radius:150px;
     }
     
@@ -211,7 +216,7 @@ div {
 }
 
 .container {
-    width:100%;
+    max-width:80%;
     padding-top: 40px;
     padding-bottom: 40px; 
     margin:0px;
@@ -272,6 +277,8 @@ div {
 
 /*********************************************************************************************/
 
-/*.container {border:3px solid red}
+.container {border:3px solid red}
 .row {border:3px solid green}
-p,table,tr,td,a,img {border:2px solid black}*/
+table {border:2px solid black}
+tr {border:2px solid black}
+td {border:2px solid black}
