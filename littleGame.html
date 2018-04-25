@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DavidBerard.me</title>
+        <meta charset="UTF-8">
+        <style>
+            @media (min-resolution: 300dpi) {
+                #s300 {
+                    border: 2px solid aqua;
+                }
+            }
+            @media (min-resolution: 200dpi) {
+                #s200 {
+                    border: 2px solid aqua;
+                }
+            }
+            @media (min-resolution: 150dpi) {
+                #s150 {
+                    border: 2px solid aqua;
+                }
+            }
+            @media (min-resolution: 100dpi) {
+                #s100 {
+                    border: 2px solid aqua;
+                }
+            }
+            @media (min-resolution: 50dpi) {
+                #s50 {
+                    border: 2px solid aqua;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <button type="button" onclick="play()">Calculate</button>
+        <p id="width"></p>
+        <p id="height"></p>
+        <p id="pixelRatio"></p>
+        <p id="length"></p>
+        
+        <div id="s50">S50</div>
+        <div id="s100">S100</div>
+        <div id="s150">S150</div>
+        <div id="s200">S200</div>
+        <div id="s300">S300</div>
+        <script>
+            function play(){
+                document.getElementById("width").innerHTML = "Inner width: " + window.innerWidth + " px";
+                
+                document.getElementById("height").innerHTML = "Inner height: " + window.innerHeight + " px";
+                
+                document.getElementById("pixelRatio").innerHTML = "Pixel ratio: " + window.devicePixelRatio + " dips";
+                
+                document.getElementById("length").innerHTML = "Pixel ratio: " + screen.size + " dips";
+            }
+        </script>
+    </body>
+</html>
