@@ -1,16 +1,102 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>CV English</title>
+        <title>DavidBerard.me</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="header.css">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     </head>
-    <body>
-        <br>
-        <div align="center">
-            <img src="media/construction.svg" atl="construction" width="300px">
-            <p>
-                <br>
-                PHYLOSOPHY AND ASPIRATIONS TEMPLATE IS UNDER CONSTRUCTION
-            </p>
+    <body style="background-color:#E6E6E6;">
+    
+        
+<!--***THE ORANGE BAR WITH ICONS***************************************-->  
+        <div class="fixed-top" id="linkbar">
+                <a target="_blank" href="https://www.linkedin.com/in/david-berard/">
+                    <img class="imgLinkedIn" src="media/linkedin.svg" alt="linkedin">
+                </a>
+                <a target="_blank" href="https://github.com/davidberard2">
+                    <img class="imgGit" src="media/gith.svg" alt="github">
+                </a>
+            
+                <div class="tooltip2">
+                    <img class="imgCV" src="media/cv.svg" alt="cv">
+                      <span class="tooltiptext">
+                        <a target="_blank" href="cvEnglishPDF.html" style="text-decoration:none; color:white;">English CV</a>
+                        <br>
+                        <a target="_blank" href="cvFrenchPDF.html" style="text-decoration:none; color:white;">French CV</a>
+                      </span>
+                </div>
+            
+                <a id="demo" style="margin-left:30%"></a>
+               
+                <script>
+                    window.addEventListener("resize", function(){
+                        var w = window.innerWidth
+                        || document.documentElement.clientWidth
+                        || document.body.clientWidth;
+
+                        var x = document.getElementById("demo");
+                        x.innerHTML = "-->" + w + "<--";
+                    });
+                </script>  
+            
+            
+                <a href="me.html">
+                    <img class="imgLogo" src="media/logoWhite.png" alt="cv">
+                </a>
+            
+                <a data-toggle="collapse" data-target="#list" style="float:right">
+                    <img class="imgMenu" src="media/menu.svg" alt="Menu">
+                </a>
         </div>
+<!--*******************************************************************-->
+    
+        
+<!--***THE MENU BAR****************************************************-->
+        <ul class="fixed-top" id="menu">
+            <li id="setUpMenu"><a href="index.html">Exp. / Skills</a></li>
+            <li id="setUpMenu"><a href="philosophy.html">Phil. / Aspirations</a></li>
+            <li id="setUpMenu"><a href="projects.html">Projects</a></li>
+            <li id="setUpMenu"><a href="literaryInfluences.html">Literary Influences</a></li>
+        </ul>
+        
+        <ul class="collapse fixed-top" id="list" data-toggle="collapse" data-target="#list">
+            <li id="setUpList" ><a href="index.html">Exp. / Skills</a></li>
+            <li id="setUpList" ><a href="philosophy.html">Phil. / Aspirations</a></li>
+            <li id="setUpList" ><a href="projects.html">Projects</a></li>
+            <li id="setUpList" ><a href="literaryInfluences.html">Literary Influences</a></li>
+        </ul>
+<!--*******************************************************************-->
+    
+        <div id="buffer"></div>
+        <div class="container" align="center" style="max-width:80%">
+            <div  class="row">
+                <div class="col-xl-12" style="text-align:center">
+                    <img src="media/construction.svg" atl="construction" width="300px">
+                    <p>
+                        <br>
+                        PHYLOSOPHY AND ASPIRATIONS TEMPLATE IS UNDER CONSTRUCTION
+                    </p>
+                </div>
+            </div>
+        </div>
+
+<!--***COPYRIGHT DIVISION**********************************************-->
+        <div>
+            <hr>
+            <p style="text-align:center">
+                Copyright 2018-2025 by David Bérard. All Rights Reserved.
+            </p>
+            <a  target="_blank" href="sacade.html">SACADE</a> 
+            <a  target="_blank" href="littleGame.html">LITTLE GAME</a> 
+        </div>
+<!--*******************************************************************-->        
+
+        
     </body>
 </html>
