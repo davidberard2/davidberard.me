@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>CV English</title>
-        
+        <title>DavidBerard.me</title>
+        <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="index.css">
-        <style>
-        .instagram {padding:5px; width:300px}
-    </style>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     </head>
-    <body>
-<!--***THE ORANGE BAR WITH ICONS***************************************-->   
-        <div id="linkbar">
+    <body style="background-color:#E6E6E6;">
+    
+        
+<!--***THE ORANGE BAR WITH ICONS***************************************-->  
+        <div class="fixed-top" id="linkbar">
                 <a target="_blank" href="https://www.linkedin.com/in/david-berard/">
                     <img class="imgLinkedIn" src="media/linkedin.svg" alt="linkedin">
                 </a>
@@ -18,7 +22,7 @@
                     <img class="imgGit" src="media/gith.svg" alt="github">
                 </a>
             
-                <div class="tooltip">
+                <div class="tooltip2">
                     <img class="imgCV" src="media/cv.svg" alt="cv">
                       <span class="tooltiptext">
                         <a target="_blank" href="cvEnglishPDF.html" style="text-decoration:none; color:white;">English CV</a>
@@ -27,8 +31,8 @@
                       </span>
                 </div>
             
-                <a id="demo" style="margin-left:30%"></a>
-                
+              <!--  <a id="demo" style="margin-left:30%"></a>
+               
                 <script>
                     window.addEventListener("resize", function(){
                         var w = window.innerWidth
@@ -36,30 +40,45 @@
                         || document.body.clientWidth;
 
                         var x = document.getElementById("demo");
-                        x.innerHTML = "-->" + w + "<--";
+                        x.innerHTML = "->" + w + "<-";
                     });
-                </script>
-                
+                </script>  -->
+            
+            
                 <a href="me.html">
                     <img class="imgLogo" src="media/logoWhite.png" alt="cv">
                 </a>
             
-                <a class="temp" data-toggle="collapse" data-target="#list" style="float:right">
-                    <img class="imgMenu" src="media/menu.svg" alt="Menu">
+                <a>
+                    <img data-toggle="collapse" data-target="#list" class="imgMenu" src="media/menu.svg" alt="Menu">
                 </a>
         </div>
 <!--*******************************************************************-->
+    
         
 <!--***THE MENU BAR****************************************************-->
-        <ul id = "menu" class="menu">
+        <ul class="fixed-top" id="menu">
             <li id="setUpMenu"><a href="index.html">Exp. / Skills</a></li>
             <li id="setUpMenu"><a href="philosophy.html">Phil. / Aspirations</a></li>
             <li id="setUpMenu"><a href="projects.html">Projects</a></li>
             <li id="setUpMenu"><a href="literaryInfluences.html">Literary Influences</a></li>
         </ul>
+        
+        <ul class="collapse fixed-top" id="list" data-toggle="collapse" data-target="#list">
+            <li id="setUpList" ><a href="index.html">Exp. / Skills</a></li>
+            <li id="setUpList" ><a href="philosophy.html">Phil. / Aspirations</a></li>
+            <li id="setUpList" ><a href="projects.html">Projects</a></li>
+            <li id="setUpList" ><a href="literaryInfluences.html">Literary Influences</a></li>
+        </ul>
 <!--*******************************************************************-->
 
-        <div class="row" id="first" style="text-align:center;width:80%">
+        <div id="buffer"></div>
+
+        <style>
+            .instagram {padding:5px; width:300px}
+        </style>
+        <div class="container" style="text-align:center;width:80%">
+            <img class="instagram" src="media/instagram/2018-02-19.jpg" alt="name">
             <img class="instagram" src="media/instagram/2018-01-09.jpg" alt="name">
             <img class="instagram" src="media/instagram/2018-01-03.jpg" alt="name">
             <img class="instagram" src="media/instagram/2017-11-28.jpg" alt="name">
@@ -71,5 +90,19 @@
             <img class="instagram" src="media/instagram/2017-04-22.jpg" alt="name">
             <img class="instagram" src="media/instagram/2017-02-12.jpg" alt="name">
         </div>
+        
+<!--***COPYRIGHT DIVISION**********************************************-->
+        <div>
+            <hr style="border: 2px solid #767171;">
+            <p style="text-align:center">
+                Copyright 2018-2025 by David Bérard. All Rights Reserved.
+            </p>
+            <div align="center">
+                <a  target="_blank" href="sacade.html">SACADE</a> 
+                +
+                <a  target="_blank" href="littleGame.html">LITTLE GAME</a> 
+            </div>
+        </div>
+<!--*******************************************************************--> 
     </body>
 </html>
