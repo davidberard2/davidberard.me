@@ -3,6 +3,11 @@
     <head>
         <title>DavidBerard.me</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
         <style>
             @media (min-resolution: 375dpi) {
                 #s375 {
@@ -67,5 +72,74 @@
                 document.getElementById("length").innerHTML = "Pixel ratio: " + screen.size + " dips";
             }
         </script>
+        <div class="container">
+            <table>
+                    <td>
+                        <tr>
+                            <a class="card-link" data-toggle="collapse" href="#collapseOne" style="padding:0;margin:0;">
+                                <img src="media/workExperience/c2.svg" width="18%" style="padding:0;margin:0;">
+                            </a>
+                        </tr>
+                        <tr>
+                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo" style="padding:0;margin:0;">
+                                <img src="media/workExperience/prattandwhitneycanada.svg" width="18%" style="padding:0;margin:0;">
+                            </a>
+                        </tr>
+                        <tr>
+                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree" style="padding:0;margin:0;">
+                                <img src="media/workExperience/transfreight.svg" width="18%" style="padding:0;margin:0;">
+                            </a>
+                        </tr>
+                        <tr>
+                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour" style="padding:0;margin:0;">
+                                <img src="media/workExperience/bombardier.svg" width="18%" style="padding:0;margin:0;">
+                            </a>
+                        </tr>
+                        <tr>
+                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseFive" style="padding:0;margin:0;">
+                                <img src="media/workExperience/montreal.svg" width="18%" style="padding:0;margin:0;">
+                            </a>
+                        </tr>
+                    </td>
+                </table>
+          <div id="accordion">
+            <div class="card" style="border:none;">
+              <div id="collapseOne" style="border:none;" class="collapse show" data-parent="#accordion">
+                <div class="card-body" style="border:none;">
+                  0.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+            </div>
+            <div class="card" style="border:none;">
+              <div id="collapseTwo" style="border:none;" class="collapse" data-parent="#accordion">
+                <div class="card-body" style="border:none;">
+                  1.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+            </div>
+            <div class="card" style="border:none;">
+              <div id="collapseThree" style="border:none;" class="collapse" data-parent="#accordion">
+                <div class="card-body" style="border:none;">
+                  2.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+            </div>
+              <div class="card" style="border:none;">
+              <div id="collapseFour" style="border:none;" class="collapse" data-parent="#accordion">
+                <div class="card-body" style="border:none;">
+                  3.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+            </div>
+              <div class="card" style="border:none;">
+              <div id="collapseFive" style="border:none;" class="collapse" data-parent="#accordion">
+                <div class="card-body" style="border:none;">
+                  4.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
     </body>
 </html>

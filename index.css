@@ -141,6 +141,7 @@ body {
 }
 }*/
 
+
 body{
     margin: 0px;
     padding: 0px;
@@ -291,8 +292,9 @@ div {
 
 /*********************************************************************************************/
 
-.container {border:3px solid red}
+/*.container {border:3px solid red}
 .row {border:3px solid green}
 table {border:2px solid black}
 tr {border:2px solid black}
 td {border:2px solid black}
+div [class^="col-"] {border:2px solid orange;}*/
