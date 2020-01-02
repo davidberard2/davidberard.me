@@ -71,6 +71,10 @@ lg (for laptops and desktops - screens equal to or greater than 1200px wide)*/
         left:140px;
         height:40px;
     }
+    
+    .imgBook {
+        padding: 5%;
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -126,6 +130,10 @@ lg (for laptops and desktops - screens equal to or greater than 1200px wide)*/
         left:140px;
         height:40px;
     }
+    
+    .imgBook {
+        padding: 0%;
+    }
 }
 
 /*
@@ -146,6 +154,13 @@ body{
     margin: 0px;
     padding: 0px;
     font-family: arial;
+}
+
+body.fr p[lang=en] {
+    display: none;
+}
+body.en p[lang=fr] {
+    display: none;
 }
 
 #linkbar{
