@@ -35,8 +35,19 @@ lg (for laptops and desktops - screens equal to or greater than 1200px wide)*/
     .imgSelf {
         border-radius:150px;
     }
-    
+
     .imgMenu {
+        visibility: hidden;
+    }
+
+    .imgLogo {
+        position:fixed;
+        top:10px;
+        right:20px;
+        height:40px;
+    }
+
+   /* .imgMenu {
         position:fixed;
         top:10px;
         right:20px;
@@ -49,7 +60,7 @@ lg (for laptops and desktops - screens equal to or greater than 1200px wide)*/
         right:50%;
         left:50%;
         height:40px;
-    }
+    }*/
     
     .imgLinkedIn {
         position:fixed;
