@@ -125,7 +125,7 @@ lg (for laptops and desktops - screens equal to or greater than 1200px wide)*/
     }
     
     .imgGit {
-        position:fixed;
+        position:relative;
         top:10px;
         left:80px;
         height:40px;
