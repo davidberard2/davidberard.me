@@ -161,7 +161,7 @@ body{
 
 #linkbar{
     position:fixed;
-    top:0;
+    top:10;
     vertical-align: middle;
     height:60px;
     width:100%;
@@ -175,7 +175,7 @@ body{
     vertical-align: middle;
     height:10px;
     width:100%;
-    background-color: #FFFFF;
+    background-color: #767171;
     margin:auto;
 }
 
