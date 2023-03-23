@@ -41,7 +41,7 @@ lg (for laptops and desktops - screens equal to or greater than 1200px wide)*/
     }
 
     .imgLogo {
-        position:fixed;
+        position:absolute;
         top:10px;
         right:20px;
         height:40px;
@@ -63,21 +63,21 @@ lg (for laptops and desktops - screens equal to or greater than 1200px wide)*/
     }*/
     
     .imgLinkedIn {
-        position:fixed;
+        position:absolute;
         top:10px;
         left:20px;
         height:40px;
     }
     
     .imgGit {
-        position:fixed;
+        position:absolute;
         top:10px;
         left:80px;
         height:40px;
     }
     
     .imgCV {
-        position:fixed;
+        position:absolute;
         top:10px;
         left:140px;
         height:40px;
@@ -111,21 +111,21 @@ lg (for laptops and desktops - screens equal to or greater than 1200px wide)*/
     }  
     
     .imgLogo {
-        position:fixed;
+        position:absolute;
         top:10px;
         right:20px;
         height:40px;
     }
     
     .imgLinkedIn {
-        position:fixed;
+        position:absolute;
         top:10px;
         left:20px;
         height:40px;
     }
     
     .imgGit {
-        position:fixed;
+        position:absolute;
         top:10px;
         left:80px;
         height:40px;
