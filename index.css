@@ -169,6 +169,16 @@ body{
     margin:auto;
 }
 
+#languagebar{
+    position:fixed;
+    top:0;
+    vertical-align: middle;
+    height:10px;
+    width:100%;
+    background-color: #FFFFF;
+    margin:auto;
+}
+
 h1,h2,h3,h4,h5,h6 {
     font-family: Arial;
     margin:0px;
