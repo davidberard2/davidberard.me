@@ -161,7 +161,7 @@ body{
 
 #linkbar{
     position:fixed;
-    top:10;
+    top:0;
     vertical-align: middle;
     height:60px;
     width:100%;
